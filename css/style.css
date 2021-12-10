@@ -1,0 +1,154 @@
+.title {
+    margin: 24px 0px;
+    padding: 20px;
+    font-family: 'Black Ops One', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 62px;
+    background-color: #f8f9fa;
+}
+
+.spinner-container {
+    width: 100%;
+    height: 400px;
+}
+
+.projects-row {
+    padding: 0 5px;
+    margin: 0 0 40px;
+}
+
+.projects-row .col {
+    max-width: 240px;
+}
+
+.projects-row .col .card-img-top {
+    padding: 15%;
+    border-radius: 25%;
+}
+
+.projects-row .card-text {
+    min-height: 100px;
+}
+
+.projects-row .card--buttons {
+    display: flex; 
+    justify-content: flex-start;
+}
+
+.projects-row .project-link {
+    font-size: 0.8rem; 
+    margin-right: 10px;
+}
+
+.projects-row .project-link.disabled {
+    background-color: #f7f7f7;
+    border-color: #ababab;
+    color: #25282b;
+    border-style: dashed;
+    border-width: 2px;
+    font-weight: bold;
+}
+
+.projects-row .project-tech-pill {
+    font-weight: 600;
+}
+
+.projects-row .card {
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+.projects-row .card:hover {
+    box-shadow: 0 2px 10px rgb(10 10 10 / 20%), 0 0 0 1px rgb(10 10 10 / 10%);
+}
+
+/* .done::before {
+    content: "🗹";
+    position: absolute;
+    left: 2px;
+} */
+
+.ajax-error {
+    margin-bottom: 42px;
+}
+
+.ajax-error--box {
+    width: 100%;
+    min-height: 140px;
+    background: #ebebeb;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+}
+
+.ajax-error--icon {
+    font-size: 72px;
+}
+
+.ajax-error--text {
+    margin: 0;
+    font-size: 18px;
+}
+
+.insetText {
+    background-color: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+
+/****************************************/ 
+/* Overrides default bootstrap behavior */ 
+/****************************************/ 
+.btn:focus {
+    box-shadow: none !important;
+}
+
+input.theme-switch:focus {
+    border-color:  rgba(0, 0, 0, 0.25) !important;
+    box-shadow: none !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e") !important;
+}
+
+input.theme-switch:checked {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='white'/%3e%3c/svg%3e") !important;
+}
+
+/***********************/ 
+/* Dark theme settings */
+/***********************/ 
+[data-theme="dark"] body {
+    background-color: #000;
+    filter: invert(100%) hue-rotate(180deg) brightness(110%);
+    
+}
+
+[data-theme="dark"] img, video, iframe, body * [style*=background-image], .no-dark-mode {
+    filter: invert(100%) hue-rotate(180deg) ;
+    background-color: unset!important
+}
+
+/***********************************/ 
+/* Responsive design media queries */ 
+/***********************************/ 
+@media only screen and (max-width: 576px) {
+    .title {
+        font-size: 50px;
+    }
+    
+    .projects-row .col {
+        max-width: 85%;
+        font-size: 1rem;
+    }
+
+    .projects-row .col .card-img-top {
+        margin: 15px auto 0;
+        padding: 2%;
+        max-height: 150px;
+        max-width:  150px;
+    }
+
+    .projects-row .card-text {
+        min-height: 20px;
+    }
+  }
